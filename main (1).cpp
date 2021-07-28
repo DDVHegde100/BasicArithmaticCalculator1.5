@@ -12,14 +12,19 @@ int main()
     int f;
     int g;
     int h;
+    int i;
+    int j;
+    
     int x;
     int type;
     int sum;
     int sub;
     int prod;
     int divid;
+    int twoRoot;
+    int threeRoot;
     
-    cout << "Enter 1 for addition. Enter 2 for subtraction. Enter 3 for multiplication. Enter 4 for dividion";
+    cout << "Enter 1 for addition. Enter 2 for subtraction. Enter 3 for multiplication. Enter 4 for division. Enter 5 for Square roots. Enter 6 for Cube roots.  ";
     cin >> x;
     
     if(x==1){
@@ -62,8 +67,24 @@ int main()
     divid=g/h;
     cout << "The dividend of those numbers is " <<divid;
     return 0; 
-    }else if(x>4){
-        cout << "Please enter a number between 1-4.";
+    }else if(x==5){
+        
+    cout << "Enter the first number for it's root! \n";
+    cin >> i;
+    
+    twoRoot=sqrt(i);
+    cout << "The root of the number is " <<twoRoot;
+        
+    }else if(x==5){
+        
+    cout << "Enter the first number for it's cube root! \n";
+    cin >> j;
+    
+    threeRoot=cbrt(j);
+    cout << "The cube root of the number is " <<threeRoot;
+        
+    }else if(x>6){
+        cout << "Please er a number between 1-4.";
         cin >> x;
     }
     
