@@ -84,7 +84,7 @@ int main()
     cout << "The cube root of the number is " <<threeRoot;
         
     }else if(x>6){
-        cout << "Please er a number between 1-4.";
+        cout << "Please enter a number between 1-4.";
         cin >> x;
     }
     
